@@ -1,0 +1,11 @@
+.ContentPane{
+  height: 75vh;
+}
+
+.jumbotron{
+  background-color: #ffffff;
+  border: 1px solid #8224E3;
+  border-radius: 10px;
+  opacity: 0.85;
+  filter: alpha(opacity=85); /* For IE8 and earlier */
+}
