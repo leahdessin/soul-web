@@ -2,11 +2,22 @@
   height: 75vh;
 }
 
-.jumbotron{
+.showbox{
   padding: 0 0;
   background-color: #ffffff;
   border: 1px solid #8224E3;
   border-radius: 10px;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+.mapouter{
+  text-align:right;
+  height:500px;
+  width:600px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:600px
 }

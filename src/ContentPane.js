@@ -2,7 +2,21 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './ContentPane.css';
 import bg_main from './img/bg_main.jpeg'
-import Content from './Content'
+import Faculty from './content/Faculty';
+import Mission from './content/Mission';
+import Testimonials from './content/Testimonials';
+import Contact from './content/Contact';
+import PoleClasses from './content/PoleClasses';
+import SilksClasses from './content/SilksClasses';
+import LyraClasses from './content/LyraClasses';
+import DanceClasses from './content/DanceClasses';
+import PoleParties from './content/PoleParties';
+import AerialParties from './content/AerialParties';
+import DanceParties from './content/DanceParties';
+import Gallery from './content/Gallery';
+import Rentals from './content/Rentals';
+import BookNow from './content/BookNow';
+
 
 const bg = {
   backgroundImage: 'url('+bg_main+')',
@@ -10,8 +24,26 @@ const bg = {
   backgroundPosition: 'center',
   backgroundRepeat:'no-repeat'
 };
+const CONTENT_STATE = {
+  faculty: <Faculty />,
+  mission: <Mission />,
+  testimonials: <Testimonials />,
+  contact: <Contact />,
+  pole: <PoleClasses />,
+  silks: <SilksClasses />,
+  lyra: <LyraClasses />,
+  dance: <DanceClasses />,
+  poleparties: <PoleParties />,
+  aerialparties: <AerialParties />,
+  danceparties: <DanceParties />,
+  gallery: <Gallery />,
+  rentals: <Rentals />,
+  booknow: <BookNow />,
+};
 
-const Assembler = ({match}) => (<Content kind={match.params.heading} />);
+const Assembler = ({match}) => (
+  CONTENT_STATE[match.params.heading]
+);
 
 class ContentPane extends Component {
   constructor(props) {
@@ -24,11 +56,9 @@ class ContentPane extends Component {
     //const subs = this.props.subheadings => {return <a className="dropdown-item" href="/{title}">title</a>};
 
     return (
-      <div className="ContentPane row justify-content-center" style={bg}>
-        <div className="jumbotron jumbotron-fluid pl-2 col-10">
-          <div id ="content_dest" className="lead container pb-3">
-            <Route path="/:heading" component={Assembler}/>
-          </div>
+      <div className="ContentPane justify-content-center" style={bg}>
+        <div className="showbox container p-2">
+          <Route path="/:heading" component={Assembler}/>
         </div>
       </div>
     );
