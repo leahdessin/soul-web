@@ -4,3 +4,13 @@ a.nav-link:hover{
   background-color:transparent;
   border-bottom: 1px solid #8224E3;
 }
+#booknow-nav{
+  border-radius: 30px;
+  border: 2px solid #8224E3;
+  font-weight: bold;
+  color: #8224E3;
+}
+#booknow-nav:hover{
+  background-color: #8224E3;
+  color: white;
+}

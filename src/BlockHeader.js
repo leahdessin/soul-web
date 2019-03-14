@@ -13,7 +13,7 @@ class BlockHeader extends Component {
   render() {
     return (
       <li className="col-md-6 col-lg nav-item align-self-center">
-        <Link id={this.props.heading+'-nav'} className="nav-link top-level" role="button" to={'/'+this.props.heading}>
+        <Link id={this.props.heading.replace(/\s/g, "")+'-nav'} className="nav-link top-level" role="button" to={'/'+this.props.heading.replace(/\s/g, "")}>
           {this.props.heading.toUpperCase()}
         </Link>
       </li>
