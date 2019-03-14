@@ -24,6 +24,7 @@ class HeaderNav extends Component {
             <DropdownHeader heading={'parties'} subheadings={['pole parties','aerial parties','dance parties']} />
             <BlockHeader heading={'rentals'} />
             <BlockHeader heading={'gallery'} />
+            <BlockHeader heading={'book now'} />
           </ul>
         </nav>
       </div>

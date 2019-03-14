@@ -1,7 +1,4 @@
 .App {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 body {
@@ -9,19 +6,6 @@ body {
   font-family: 'Quicksand', cursive;
   color: black;
 }
-
-img.bg {
-  /* Set rules to fill background */
-  min-height: 50%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: absolute;
-  left: 0;
-  top:-100px;
-  z-index: -1;
+:focus {
+  border: 1px dotted #8224E3;
 }

@@ -12,16 +12,18 @@ li.nav-item > div.dropdown-menu > a.dropdown-item{
   text-align:center;
   letter-spacing:1.5px;
 }
-button.dropdown-toggle:hover{
+.nav-link:hover, .dropdown-item:hover{
   color: #8224E3;
   font-weight:700;
   background-color:transparent;
   border-bottom: 1px solid #8224E3;
 }
-
-button.dropdown-item:hover, a.dropdown-toggle:hover{
-  color: #8224E3;
-  font-weight:700;
-  background-color:transparent;
-  border-bottom: 1px solid #8224E3;
+.dropdown-menu {
+  opacity:0.9;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.dropdown-menu{
+  min-width: 8rem;
 }

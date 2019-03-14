@@ -8,10 +8,11 @@ class BlockHeader extends Component {
     this.state = {
       value: null,
     };
+    this.subheading = this.heading;
   }
   render() {
     return (
-      <li className="col-md-6 col-lg nav-item">
+      <li className="col-md-6 col-lg nav-item align-self-center">
         <Link id={this.props.heading+'-nav'} className="nav-link top-level" role="button" to={'/'+this.props.heading}>
           {this.props.heading.toUpperCase()}
         </Link>
