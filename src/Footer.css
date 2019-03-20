@@ -1,5 +1,7 @@
 #footer {
-  height: 40px;
+  height: 60px;
   bottom:0;
   font-size:10pt;
+  background-color: #8224E3;
+  color: white;
 }

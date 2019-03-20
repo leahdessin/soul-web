@@ -56,7 +56,7 @@ class ContentPane extends Component {
     //const subs = this.props.subheadings => {return <a className="dropdown-item" href="/{title}">title</a>};
 
     return (
-      <div className="ContentPane justify-content-center" style={bg}>
+      <div className="ContentPane justify-content-center pb-4" style={bg}>
         <div className="showbox container p-2">
           <Route path="/:heading" component={Assembler}/>
         </div>
